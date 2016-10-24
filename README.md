@@ -80,5 +80,6 @@ oc get route
 * 删除pod
 
 * 等pod重新创建后再执行t2，接收到如下消息即可。 
+
 ![image](https://github.com/asiainfoLDP/rabbitMQ-persistence/blob/master/20161024134133.png)
 
