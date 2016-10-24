@@ -52,7 +52,7 @@ spec:
 
 #### 4.创建svc
 
-需要开放5672、15672、25672三个端口的服务 
+需要开放5672、15672、25672三个端口的svc 
 
 ```
 oc expose dc <dcName> --name rabbit --port 5672
