@@ -59,7 +59,7 @@ oc expose dc <dcName> --name rabbit --port 5672
 oc expose dc <dcName> --name rabbit1 --port 15672
 oc expose dc <dcName> --name rabbit2 --port 15672
 ```
-#### 5.获取链接
+#### 5.获取route
 开放15672服务的链接
 ```
 oc expose svc <svcName>
