@@ -66,6 +66,8 @@ oc expose svc rabbit1
 oc get route
 ```
 通过页面访问连接即可
+![image](https://github.com/asiainfoLDP/rabbitMQ-persistence/blob/master/20161024132106.png)
+
 
 ### 测试
 
@@ -74,4 +76,4 @@ oc get route
 
 执行t1脚本发送消息
 删除pod
-等pod重新创建后再执行t2，接收到如下消息
+等pod重新创建后再执行t2，接收到如下消息即可。
