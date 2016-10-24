@@ -70,6 +70,7 @@ oc get route
 ### 测试
 
 通过页面创建一个test用户
+![image](https://github.com/asiainfoLDP/rabbitMQ-persistence/blob/master/20161024132339.png)
 
 执行t1脚本发送消息
 删除pod
