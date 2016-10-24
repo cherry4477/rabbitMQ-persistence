@@ -52,13 +52,15 @@ spec:
 
 #### 4.创建svc
 
+需要开放5672、15672、25672三个端口的服务 
+
 ```
-oc expose dc rabbit --name rabbit --port 5672
-oc expose dc rabbit --name rabbit1 --port 15672
-oc expose dc rabbit --name rabbit2 --port 15672
+oc expose dc <dcName> --name rabbit --port 5672
+oc expose dc <dcName> --name rabbit1 --port 15672
+oc expose dc <dcName> --name rabbit2 --port 15672
 ```
 #### 5.获取链接
-
+开放15672服务的链接
 ```
 oc expose svc rabbit1
 oc get route
@@ -66,5 +68,5 @@ oc get route
 通过页面访问连接即可
 
 ### 测试
-  
 
+通过页面
