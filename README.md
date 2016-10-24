@@ -66,7 +66,7 @@ oc expose svc rabbit1
 oc get route
 ```
 
-通过页面访问连接即可
+通过页面访问连接即可                                  
 ![image](https://github.com/asiainfoLDP/rabbitMQ-persistence/blob/master/20161024132106.png)
 
 
