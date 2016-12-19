@@ -15,8 +15,7 @@ oc run rabbit --image=registry.dataos.io/wfw2046/rabbitmq:3-management --env RAB
   
   RABBITMQ_DEFAULT_PASS  //默认用户的密码
   
-  HOSTNAME               //必须填写，防止pod删除或重启后，pod与svc不匹配
-
+  HOSTNAME               //必须写，指定存储的路径，如果不写默认路径是pod的名字，因为pod的名字删除后会变，所以存储的路径也会变
 ```
 #### 2.创建持久化卷(略)
 
@@ -59,7 +58,7 @@ oc expose dc <dcName> --name rabbit --port 5672
 oc expose dc <dcName> --name rabbit1 --port 15672
 oc expose dc <dcName> --name rabbit2 --port 15672
 ```
-#### 5.获取route
+#### 5.获得管理界面，expose route
 开放15672服务的链接
 ```
 oc expose svc <svcName>
@@ -70,10 +69,11 @@ oc get route
 ![image](https://github.com/asiainfoLDP/rabbitMQ-persistence/blob/master/20161024132106.png)
 
 
-### 测试
-
-* 通过页面创建一个test用户  
+### 测试(在集群内测试)
+* 通过页面创建一个test用户
 ![image](https://github.com/asiainfoLDP/rabbitMQ-persistence/blob/master/20161024132339.png)
+
+* 修改t1中的redentials,connection 为创建的用户,5672的svc的地址
 
 * 执行t1脚本发送消息
 
