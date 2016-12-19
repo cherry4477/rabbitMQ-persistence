@@ -15,7 +15,7 @@ oc run rabbit --image=registry.dataos.io/wfw2046/rabbitmq:3-management --env RAB
   
   RABBITMQ_DEFAULT_PASS  //默认用户的密码
   
-  HOSTNAME               //必须写，指定存储的路径，如果不写默认路径是pod的名字，因为pod的名字删除后会变，所以存储的路径也会变
+  HOSTNAME               //必须写，指定存储的路径，如果不写默认路径是pod的名字，因为pod的名字删除后会变，所以存储的路径也会变，就会访问不到之前之久化的东西
 ```
 #### 2.创建持久化卷(略)
 
